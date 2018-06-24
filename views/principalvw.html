@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto" rel="stylesheet">
     <link rel="stylesheet" href="../css/fontello.css">
     <link rel="stylesheet" href="../bootstrap4.1/css/bootstrap.min.css">
@@ -74,7 +75,7 @@
                         </div>
                         <div class="col">
                             <form action="">
-                                <textarea name="mensaje" id="" placeholder="Publicar mensaje"></textarea>
+                                <textarea name="mensaje" id="post-text" placeholder="Publicar mensaje"></textarea>
                                 <div class="contenedor-botones d-flex justify-content-between">
                                     <div class="media">
                                         <a href="#">
@@ -88,7 +89,7 @@
                                         </a>
                                     </div>
                                     <div>
-                                        <button>Publicar</button>
+                                        <button id="publish">Publicar</button>
                                     </div>
 
                                 </div>
@@ -97,180 +98,208 @@
                     </div>
                 </div>
                 <!--publicacion 2-->
-                <div class="publicacion">
-                    <div class="row">
-                        <div class="col-auto foto">
-                            <a href="#">
-                                <img src="../assets/image/persona5.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <div class="post">
-                                <a href="#" class="nombre">Luisa Kent</a>
-                                <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minima maxime similique explicabo
-                                    perspiciatis quidem ipsum consequuntur facilis ex distinctio! Excepturi voluptas consectetur
-                                    ut dolor, rerum quae fugiat sint veritatis.
-                                </p>
-                                <div class="caja-botones d-flex justify-content-between align-items-center">
-                                    <button>
-                                        <i class="icon-thumbs-up"></i>
-                                    </button>
-                                    <p>15
-                                        <i class="icon-thumbs-up"></i>
+                <div id="publicaciones">
+                    <div class="publicacion">
+                        <div class="row">
+                            <div class="col-auto foto">
+                                <a href="#">
+                                    <img src="../assets/image/persona5.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <div class="post">
+                                    <a href="#" class="nombre">Luisa Kent</a>
+                                    <p class="texto">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Optio minima maxime similique
+                                        explicabo perspiciatis quidem ipsum consequuntur facilis ex distinctio! Excepturi
+                                        voluptas consectetur ut dolor, rerum quae fugiat sint veritatis.
                                     </p>
+                                    <div class="caja-botones d-flex justify-content-between align-items-center">
+                                        <button>
+                                            <i class="icon-thumbs-up"></i>
+                                        </button>
+                                        <p>15
+                                            <i class="icon-thumbs-up"></i>
+                                        </p>
+                                    </div>
                                 </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-2">
+                                <div class="comentarios">
+                                    <div class="row no-gutters comentario">
+                                        <div class="col-auto foto">
+                                            <a href="">
+                                                <img src="../assets/image/persona2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <form action="">
+                                                <textarea name="" id="" placeholder="Comentario"></textarea>
+                                            </form>
+                                        </div>
+
+                                    </div>
+                                    <div class="row no-gutters comentario">
+                                        <div class="col-auto foto">
+                                            <a href="">
+                                                <img src="../assets/image/persona2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <p class="respuesta">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
+                                            </p>
+                                            <a href="#" class="me-gusta">Me gusta</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters comentario">
+                                        <div class="col-auto foto">
+                                            <a href="">
+                                                <img src="../assets/image/persona5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <p class="respuesta">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
+                                            </p>
+                                            <a href="#" class="me-gusta">Me gusta</a>
+                                        </div>
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                    <div class="row">
-                        <div class="col-10 offset-2">
-                            <div class="comentarios">
-                                <div class="row no-gutters comentario">
-                                    <div class="col-auto foto">
-                                        <a href="">
-                                            <img src="../assets/image/persona2.jpg" alt="">
-                                        </a>
+                    <div class="publicacion">
+                        <div class="row">
+                            <div class="col-auto foto">
+                                <a href="#">
+                                    <img src="../assets/image/persona3.jpg" alt="">
+                                </a>
+                            </div>
+                            <div class="col">
+                                <div class="post">
+                                    <a href="#" class="nombre">Lorena Kent</a>
+                                    <div class="imagen">
+                                        <img src="../assets/image/disidente3.jpg" alt="">
                                     </div>
-                                    <div class="col">
-                                        <form action="">
-                                            <textarea name="" id="" placeholder="Comentario"></textarea>
-                                        </form>
-                                    </div>
-
-                                </div>
-                                <div class="row no-gutters comentario">
-                                    <div class="col-auto foto">
-                                        <a href="">
-                                            <img src="../assets/image/persona2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <p class="respuesta">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
+                                    <div class="caja-botones d-flex justify-content-between align-items-center">
+                                        <button>
+                                            <i class="icon-thumbs-up"></i>
+                                        </button>
+                                        <p>15
+                                            <i class="icon-thumbs-up"></i>
                                         </p>
-                                        <a href="#" class="me-gusta">Me gusta</a>
-
-                                    </div>
-                                </div>
-                                <div class="row no-gutters comentario">
-                                    <div class="col-auto foto">
-                                        <a href="">
-                                            <img src="../assets/image/persona5.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <p class="respuesta">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
-                                        </p>
-                                        <a href="#" class="me-gusta">Me gusta</a>
                                     </div>
                                 </div>
                             </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10 offset-2">
+                                <div class="comentarios">
+                                    <div class="row no-gutters comentario">
+                                        <div class="col-auto foto">
+                                            <a href="">
+                                                <img src="../assets/image/persona2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <form action="">
+                                                <textarea name="" id="" placeholder="Comentario"></textarea>
+                                            </form>
+                                        </div>
 
+                                    </div>
+                                    <div class="row no-gutters comentario">
+                                        <div class="col-auto foto">
+                                            <a href="">
+                                                <img src="../assets/image/persona2.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <p class="respuesta">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
+                                            </p>
+                                            <a href="#" class="me-gusta">Me gusta</a>
+
+                                        </div>
+                                    </div>
+                                    <div class="row no-gutters comentario">
+                                        <div class="col-auto foto">
+                                            <a href="">
+                                                <img src="../assets/image/persona5.jpg" alt="">
+                                            </a>
+                                        </div>
+                                        <div class="col">
+                                            <p class="respuesta">
+                                                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
+                                            </p>
+                                            <a href="#" class="me-gusta">Me gusta</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="publicacion">
-                    <div class="row">
-                        <div class="col-auto foto">
-                            <a href="#">
-                                <img src="../assets/image/persona3.jpg" alt="">
-                            </a>
-                        </div>
-                        <div class="col">
-                            <div class="post">
-                                <a href="#" class="nombre">Lorena Kent</a>
-                                <div class="imagen">
-                                    <img src="../assets/image/paisaje1.jpg" alt="">
-                                </div>
-                                <div class="caja-botones d-flex justify-content-between align-items-center">
-                                    <button>
-                                        <i class="icon-thumbs-up"></i>
-                                    </button>
-                                    <p>15
-                                        <i class="icon-thumbs-up"></i>
-                                    </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-10 offset-2">
-                            <div class="comentarios">
-                                <div class="row no-gutters comentario">
-                                    <div class="col-auto foto">
-                                        <a href="">
-                                            <img src="assets/image/persona2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <form action="">
-                                            <textarea name="" id="" placeholder="Comentario"></textarea>
-                                        </form>
-                                    </div>
 
-                                </div>
-                                <div class="row no-gutters comentario">
-                                    <div class="col-auto foto">
-                                        <a href="">
-                                            <img src="../assets/image/persona2.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <p class="respuesta">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
-                                        </p>
-                                        <a href="#" class="me-gusta">Me gusta</a>
-
-                                    </div>
-                                </div>
-                                <div class="row no-gutters comentario">
-                                    <div class="col-auto foto">
-                                        <a href="">
-                                            <img src="../assets/image/persona5.jpg" alt="">
-                                        </a>
-                                    </div>
-                                    <div class="col">
-                                        <p class="respuesta">
-                                            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo quasi
-                                        </p>
-                                        <a href="#" class="me-gusta">Me gusta</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                        </div>
-                    </div>
-                </div>
             </div>
             <!--barra derecha-->
-            <div class="col-3 barra-lateral-derecha d-none d-lg-block">
+            <div class=" col-12 col-lg-3 barra-lateral-derecha">
                 <h3>Grupos</h3>
                 <div class="ads">
                     <a href="#">
                         <img src="../assets/image/universo.jpg" width="300" alt="">
                     </a>
                     <a href="#">
-                        <img src="../assets/image/parazit.jpg" width="300" alt="">
+                        <img src="../assets/image/parazit2.jpg" width="300" alt="">
                     </a>
                     <a href="#">
-                        <img src="../assets/image/perez.jpg" width="300" alt="">
+                        <img src="../assets/image/shelby.jpg" width="300" alt="">
                     </a>
                 </div>
                 <footer>
                     <a href="#">Privacidad</a>
                     <a href="#">Condiciones</a>
                     <a href="#">Publicidad</a>
-                    <p class="copyright">Red social @2018</p>
+                    <p class="copyright">Copyright©RockUp2018</p>
 
                 </footer>
             </div>
         </div>
     </main>
+    <h1>INICIA SESION</h1>
+    <button id="login">inicia con google</button>
+    <div id="root"></div>
+    <button id="guardar">guardar</button>
+
+
+
+
+
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+    
+<script src="https://www.gstatic.com/firebasejs/5.1.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyBrZdmxDKcMZXT7cQHnN0QHyHYBKiNTnro",
+    authDomain: "rock-47215.firebaseapp.com",
+    databaseURL: "https://rock-47215.firebaseio.com",
+    projectId: "rock-47215",
+    storageBucket: "",
+    messagingSenderId: "291761726573"
+  };
+  firebase.initializeApp(config);
+</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
     <script src="../bootstrap4.1/js/bootstrap.min.js"></script>
+    <script src="../js/principalvw.js"></script>
 </body>
+
 </html>
