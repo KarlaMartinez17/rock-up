@@ -1,5 +1,5 @@
 body {
-    background: #e9ebeb;
+    background:#f5f7f7;
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
 }
@@ -46,7 +46,7 @@ body {
   }
 /*aqui termina la vista splash*/
 a {
-    color: #1176b6;
+    color: #9a2702;
 }
 
 a:hover {
@@ -206,18 +206,18 @@ main .contenido-principal .publicar form .contenedor-botones a:hover {
 }
 
 main .contenido-principal .publicar form button {
-    border: 1px solid #00609c;
+    border: 1px solid #000000;
     padding: 5px 30px;
     font-size: 14px;
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to bottom, #1a87cd, #1176b6 100%);
+    background: linear-gradient(to bottom, #000000, #a30909 100%);
     color: #fff;
     border-radius: 3px;
     cursor: pointer;
 }
 
 main .contenido-principal .publicar form button:hover {
-    background: linear-gradient(to bottom, #1176b6, #1a87cd 100%);
+    background: linear-gradient(to bottom, #000407, #ff0000 100%);
 }
 
 /*PUBLICACIONES*/
@@ -272,7 +272,7 @@ main .publicacion .post .caja-botones {
 }
 
 main .publicacion .post .caja-botones button {
-    background: #1176b6;
+    background-color: transparent;
     color: #fff;
     cursor: pointer;
     padding: 10px 20px;
@@ -284,12 +284,16 @@ main .publicacion .post .caja-botones button {
 }
 
 main .publicacion .post .caja-botones button:hover {
-    background: #0d659d;
+    opacity: .5;
 }
 
 main .publicacion .post .caja-botones p {
     margin-bottom: 0;
-    color: #1782c6;
+    color: #9a2702;
+}
+
+.caja-botones img{
+    margin-right: 5px;
 }
 
 /*COMENTARIOS*/
