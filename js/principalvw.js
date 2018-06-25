@@ -1,7 +1,8 @@
 function getPostText(event){
     event.preventDefault();
     var postText = $('#post-text').val();
-    console.log(postText);
+   
+    
 
     $('#post-text').val('');
     

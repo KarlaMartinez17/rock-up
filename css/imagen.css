@@ -1,0 +1,14 @@
+img {
+    max-width: 100%;
+    
+  }
+  
+  #fileDisplayArea {
+    width: 100%;
+    overflow-x: auto;
+  }
+
+.input {
+    margin-bottom: 15px;
+    width:20%;
+}  
