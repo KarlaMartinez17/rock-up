@@ -5,10 +5,10 @@ function getPostText(event){
 
     $('#post-text').val('');
     
-    var userImage = '';
-    var userName = 'Karla';
+    var userImage = loggedInUser.photo;
+    var userName = loggedInUser.name;
     var numOfLikes = 5;
-    
+
     var postHtml = '<div class="row">'+
             '<div class="col-auto foto">'+
                 '<a href="#">'+
@@ -34,6 +34,7 @@ function getPostText(event){
             '</div>'+
         '</div>';
 
+    
     var firstPost = $('#publicaciones .publicacion')[0];
 
     var post = document.createElement('div');
@@ -44,7 +45,29 @@ function getPostText(event){
     
 }
 
+var loggedInUser ;
+
 $(document).ready(function (){
-    $('#publish').click(getPostText);   
+    $('#publish').click(getPostText);
+    console.log(localStorage.rockUpUserId);
+
+    
+
+    for (var i = 0; i < USERS_DATA.users.length; i++) {
+        var user = USERS_DATA.users[i];
+        
+        
+
+        if( user.id === parseInt(localStorage.rockUpUserId) ) {
+            loggedInUser= user;
+            $('.ingreso-perfil').each(function(){
+                $(this).attr('src', loggedInUser.photo);
+            });
+        }
+
+
+    }
+   
+    
 });
 
