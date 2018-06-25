@@ -1,5 +1,9 @@
 # RockUp!
 
+Nota: A quien corresponda revisar proyecto, pueden acceder por medio de esta cuenta.
+correo: guscor@gmail.com
+password: 1234567
+
 ## Introducción.
 
 RockUp! Es una red social diseñada para los amantes del Rock, en donde todos sus usuarios podrán compartir post acerca de sus bandas favoritas, eventos, noticias, modas, canciones y mucho más.
