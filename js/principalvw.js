@@ -51,23 +51,27 @@ $(document).ready(function (){
     $('#publish').click(getPostText);
     console.log(localStorage.rockUpUserId);
 
-    
-
     for (var i = 0; i < USERS_DATA.users.length; i++) {
         var user = USERS_DATA.users[i];
         
-        
-
         if( user.id === parseInt(localStorage.rockUpUserId) ) {
             loggedInUser= user;
             $('.ingreso-perfil').each(function(){
                 $(this).attr('src', loggedInUser.photo);
+                $(this).attr('user', loggedInUser.id);
             });
         }
+    }
+    $('.abrir-perfil').click(openProfile);
 
+    function openProfile(event){
+        event.preventDefault();
+        console.log('hola');
+        var userId = $(this).attr('user');
+        console.log(userId);
+        localStorage.rockUpProfileId = userId;  
+        window.location.href = 'user.html';
 
     }
-   
-    
 });
 

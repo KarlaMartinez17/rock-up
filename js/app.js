@@ -1,16 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
 $(document).ready(function () {
 
     setTimeout(function () {
@@ -38,18 +25,13 @@ $(document).ready(function () {
         var password = $('#password-val').val();
 
         for (var i = 0; i < USERS_DATA.users.length; i++) {
-            var user = USERS_DATA.users[i];
-
-
-
-            
+            var user = USERS_DATA.users[i];           
             if (email === user.email && password === user.password) {
                 window.location.href = 'views/principalvw.html';
-                localStorage.rockUpUserId = user.id;
-          
-                
+                localStorage.rockUpUserId = user.id;              
                 $('#email-val').val('');
                 $('#password-val').val('');
+                
             }
         }
     }
