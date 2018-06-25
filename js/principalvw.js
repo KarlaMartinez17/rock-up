@@ -1,4 +1,3 @@
-
 function getPostText(event){
     event.preventDefault();
     var postText = $('#post-text').val();
@@ -46,8 +45,6 @@ function getPostText(event){
 }
 
 $(document).ready(function (){
-    $('#publish').click(getPostText);
-   
-    
+    $('#publish').click(getPostText);   
 });
 
