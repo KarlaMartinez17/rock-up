@@ -59,6 +59,7 @@ a:hover {
 header {
     background: black;
     padding: 10px 0;
+    
 }
 
 header .log img {
@@ -465,3 +466,6 @@ main .contenido-principal .publicar .foto {
   .fijar {
     margin-top: -135px;
   }
+
+  
+      
