@@ -1,7 +1,6 @@
 body{
     margin: 0;
     padding: 0;
-    background-color: rgba(63, 62, 62, 0.418);
 }
 
 .portada{
@@ -26,4 +25,11 @@ body{
     width: 250px;
     height: 250px;
 
+}
+
+
+/*css publicaciones*/
+
+.publicacion{
+    top:200px;
 }
